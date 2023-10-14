@@ -8,6 +8,6 @@ spec:
   selector:
     app: httpd_app_nautilus
   ports:
-    - port: 80
-      targetPort: 80
+    - port: 8020
+      targetPort: 8020
       nodePort: 30004
