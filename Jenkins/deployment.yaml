@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jenkins-deployment
-  namespace: jenkins
+  name: Jenkins-deployment
+  namespace: Jenkins
   labels:
-    app: jenkins
+    app: Jenkins
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jenkins
+      app: Jenkins
   template:
     metadata:
       labels:
-        app: jenkins
+        app: Jenkins
     spec:
       containers:
-        - name: jenkins-container
-          image: jenkins
+        - name: Jenkins-container
+          image: Jenkins
           ports:
             - containerPort: 8080
