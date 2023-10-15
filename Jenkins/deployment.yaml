@@ -16,7 +16,7 @@ spec:
         app: jenkins
     spec:
       containers:
-        - name: jenkins:latest
+        - name: bitnami/jenkins
           image: jenkins
           ports:
             - containerPort: 8080
