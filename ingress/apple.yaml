@@ -8,8 +8,8 @@ spec:
   containers:
     - name: apple-app
       image: hashicorp/http-echo:latest
-      args:
-        - "-text=apple"
+      
+       
 
 ---
 apiVersion: v1
