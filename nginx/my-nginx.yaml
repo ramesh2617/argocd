@@ -17,4 +17,11 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+        volumeMounts:
+            - name: nginx-config
+              mountPath: /usr/share/nginx/html #nginx specific
+      volumes:
+        - name: nginx-config
+          configMap:
+            name: my-config2
 
