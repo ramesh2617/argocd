@@ -1,5 +1,5 @@
+apiVersion: apps/v1
 kind: Pod
-apiVersion:apps/v1
 metadata:
   name: banana-app
   labels:
@@ -12,9 +12,8 @@ spec:
         - "-text=banana"
 
 ---
-
+apiVersion: apps/v1
 kind: Service
-apiVersion: v1
 metadata:
   name: banana-service
 spec:
