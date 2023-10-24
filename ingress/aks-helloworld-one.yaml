@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: aks-helloworld-one
-        image: mcr.microsoft.com/azuredocs/aks-helloworld:v1
+        image: apache/causeway-app-helloworld
         ports:
         - containerPort: 8081
         env:
