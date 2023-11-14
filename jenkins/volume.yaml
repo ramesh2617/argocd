@@ -11,7 +11,7 @@ kind: PersistentVolume
 metadata:
   name: jenkins-pv-volume
   labels:
-    type: local
+    type: local-storage
 spec:
   storageClassName: local-storage
   claimRef:
