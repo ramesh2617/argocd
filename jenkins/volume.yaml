@@ -23,7 +23,7 @@ spec:
     - ReadWriteOnce
   local:
     path: /mnt
-    nodeAffinity:
+  nodeAffinity:
     required:
       nodeSelectorTerms:
       - matchExpressions:
